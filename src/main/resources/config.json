@@ -1,0 +1,44 @@
+{
+	"dbType" : "MySQL",
+	"dbUser" : "api",
+	"dbPwd" : "usp!@#13",
+	"dbURL" : "jdbc:mysql://localhost:3309",
+	"metadataSchema" : "dw_meta",
+	"dataSchema" : "dw",
+	"queries" : [
+					{
+						"queryId" : "q1", 
+						"queryText" : "select * from MY_FACT",
+						"incremental" : true,
+						"identityColumn" : "api_row_id",
+						"identityColumnType" : "int",
+						"updateMethod" : "trigger",
+						"shouldStandardize": true
+					},
+					{
+						"queryId" : "q2", 
+						"queryText" : "select * from MY_FACT",
+						"incremental" : true,
+						"identityColumn" : "api_row_id",
+						"identityColumnType" : "int",
+						"updateMethod" : "batch_sql",
+						"shouldStandardize": true
+					},
+					{
+						"queryId" : "q3", 
+						"queryText" : "select * from MY_FACT",
+						"incremental" : true,
+						"identityColumn" : "api_row_id",
+						"identityColumnType" : "int",
+						"updateMethod" : "batch_java",
+						"shouldStandardize": true
+					},
+					{
+						"queryId" : "q4", 
+						"queryText" : "select d1,d2,d3,d4,d5 from MY_FACT",
+						"incremental" : false,
+						"updateMethod" : "batch_java",
+						"shouldStandardize": true
+					}
+		]
+}

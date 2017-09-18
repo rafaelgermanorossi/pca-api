@@ -1,0 +1,60 @@
+
+.black{
+	-fx-stroke: black !important;
+	-fx-background-color: black !important;
+}
+
+.default-color0.chart-series-line { -fx-stroke: hsb(0.0,76.53755%,96.19399%); }
+.default-color0.chart-line-symbol { -fx-background-color: hsb(0.0,76.53755%,96.19399%), white; }
+.default-color0.chart-legend-item-symbol { -fx-background-color: hsb(0.0,76.53755%,96.19399%), white; }
+.default-color1.chart-series-line { -fx-stroke: hsb(21.0,92.79983%,95.92684%); }
+.default-color1.chart-line-symbol { -fx-background-color: hsb(21.0,92.79983%,95.92684%), white; }
+.default-color1.chart-legend-item-symbol { -fx-background-color: hsb(21.0,92.79983%,95.92684%), white; }
+.default-color2.chart-series-line { -fx-stroke: hsb(42.0,79.78741%,97.315285%); }
+.default-color2.chart-line-symbol { -fx-background-color: hsb(42.0,79.78741%,97.315285%), white; }
+.default-color2.chart-legend-item-symbol { -fx-background-color: hsb(42.0,79.78741%,97.315285%), white; }
+.default-color3.chart-series-line { -fx-stroke: hsb(63.0,91.099014%,97.55453%); }
+.default-color3.chart-line-symbol { -fx-background-color: hsb(63.0,91.099014%,97.55453%), white; }
+.default-color3.chart-legend-item-symbol { -fx-background-color: hsb(63.0,91.099014%,97.55453%), white; }
+.default-color4.chart-series-line { -fx-stroke: hsb(84.0,93.8589%,98.41215%); }
+.default-color4.chart-line-symbol { -fx-background-color: hsb(84.0,93.8589%,98.41215%), white; }
+.default-color4.chart-legend-item-symbol { -fx-background-color: hsb(84.0,93.8589%,98.41215%), white; }
+.default-color5.chart-series-line { -fx-stroke: hsb(105.0,85.428566%,98.47616%); }
+.default-color5.chart-line-symbol { -fx-background-color: hsb(105.0,85.428566%,98.47616%), white; }
+.default-color5.chart-legend-item-symbol { -fx-background-color: hsb(105.0,85.428566%,98.47616%), white; }
+.default-color6.chart-series-line { -fx-stroke: hsb(126.0,87.96104%,98.69681%); }
+.default-color6.chart-line-symbol { -fx-background-color: hsb(126.0,87.96104%,98.69681%), white; }
+.default-color6.chart-legend-item-symbol { -fx-background-color: hsb(126.0,87.96104%,98.69681%), white; }
+.default-color7.chart-series-line { -fx-stroke: hsb(147.0,93.479034%,98.14582%); }
+.default-color7.chart-line-symbol { -fx-background-color: hsb(147.0,93.479034%,98.14582%), white; }
+.default-color7.chart-legend-item-symbol { -fx-background-color: hsb(147.0,93.479034%,98.14582%), white; }
+.default-color8.chart-series-line { -fx-stroke: hsb(168.0,92.26297%,95.4558%); }
+.default-color8.chart-line-symbol { -fx-background-color: hsb(168.0,92.26297%,95.4558%), white; }
+.default-color8.chart-legend-item-symbol { -fx-background-color: hsb(168.0,92.26297%,95.4558%), white; }
+.default-color9.chart-series-line { -fx-stroke: hsb(189.0,81.18162%,96.19185%); }
+.default-color9.chart-line-symbol { -fx-background-color: hsb(189.0,81.18162%,96.19185%), white; }
+.default-color9.chart-legend-item-symbol { -fx-background-color: hsb(189.0,81.18162%,96.19185%), white; }
+.default-color10.chart-series-line { -fx-stroke: hsb(210.0,79.3198%,96.15351%); }
+.default-color10.chart-line-symbol { -fx-background-color: hsb(210.0,79.3198%,96.15351%), white; }
+.default-color10.chart-legend-item-symbol { -fx-background-color: hsb(210.0,79.3198%,96.15351%), white; }
+.default-color11.chart-series-line { -fx-stroke: hsb(231.0,98.43164%,99.1104%); }
+.default-color11.chart-line-symbol { -fx-background-color: hsb(231.0,98.43164%,99.1104%), white; }
+.default-color11.chart-legend-item-symbol { -fx-background-color: hsb(231.0,98.43164%,99.1104%), white; }
+.default-color12.chart-series-line { -fx-stroke: hsb(252.0,85.139694%,95.946175%); }
+.default-color12.chart-line-symbol { -fx-background-color: hsb(252.0,85.139694%,95.946175%), white; }
+.default-color12.chart-legend-item-symbol { -fx-background-color: hsb(252.0,85.139694%,95.946175%), white; }
+.default-color13.chart-series-line { -fx-stroke: hsb(273.0,75.448204%,96.22089%); }
+.default-color13.chart-line-symbol { -fx-background-color: hsb(273.0,75.448204%,96.22089%), white; }
+.default-color13.chart-legend-item-symbol { -fx-background-color: hsb(273.0,75.448204%,96.22089%), white; }
+.default-color14.chart-series-line { -fx-stroke: hsb(294.0,96.98702%,99.89512%); }
+.default-color14.chart-line-symbol { -fx-background-color: hsb(294.0,96.98702%,99.89512%), white; }
+.default-color14.chart-legend-item-symbol { -fx-background-color: hsb(294.0,96.98702%,99.89512%), white; }
+.default-color15.chart-series-line { -fx-stroke: hsb(315.0,88.33381%,96.882484%); }
+.default-color15.chart-line-symbol { -fx-background-color: hsb(315.0,88.33381%,96.882484%), white; }
+.default-color15.chart-legend-item-symbol { -fx-background-color: hsb(315.0,88.33381%,96.882484%), white; }
+.default-color16.chart-series-line { -fx-stroke: hsb(336.0,83.062164%,97.42708%); }
+.default-color16.chart-line-symbol { -fx-background-color: hsb(336.0,83.062164%,97.42708%), white; }
+.default-color16.chart-legend-item-symbol { -fx-background-color: hsb(336.0,83.062164%,97.42708%), white; }
+.default-color17.chart-series-line { -fx-stroke: hsb(357.0,95.34795%,98.80123%); }
+.default-color17.chart-line-symbol { -fx-background-color: hsb(357.0,95.34795%,98.80123%), white; }
+.default-color17.chart-legend-item-symbol { -fx-background-color: hsb(357.0,95.34795%,98.80123%), white; }
