@@ -2,13 +2,13 @@ package br.usp.analitico.database.config;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+
+import org.apache.commons.io.IOUtils;
 
 import br.usp.analitico.statistics.model.DimensionBean;
 
@@ -27,23 +27,11 @@ public abstract class AbstractDBDAO {
 	public AbstractDBDAO(ConfigBean config) throws IOException, URISyntaxException, SQLException{
 		this.gson = new Gson();
 		this.config = config;
-//		final Map<String, String> env = new HashMap<>();
-//		String fsURI = AbstractDBManager.class.getResource("/"+config.getDbType()+"/api_trig_queries.sql").toURI().toString().split("!")[0];
-//		FileSystem fs;
-//		try{
-//			fs = FileSystems.getFileSystem(URI.create(fsURI.replace("file:/", "")));
-//		}catch(FileSystemNotFoundException e){
-//			fs = FileSystems.newFileSystem(URI.create(fsURI), env);
-//		}
-//		this.api_trig_queries = new String(Files.readAllBytes(fs.getPath("/"+config.getDbType()+"/api_trig_queries.sql")));
-//		this.api_proc_template = new String(Files.readAllBytes(fs.getPath("/"+config.getDbType()+"/api_proc_template.sql")));
-//		this.api_proc_calc_template = new String(Files.readAllBytes(fs.getPath("/"+config.getDbType()+"/api_proc_calc_template.sql")));
-//		this.api_trig_dependent_table_template = new String(Files.readAllBytes(fs.getPath("/"+config.getDbType()+"/api_trig_dependent_table_template.sql")));
 		
-		this.api_trig_queries = new String(Files.readAllBytes(Paths.get(AbstractDBManager.class.getResource("/"+config.getDbType()+"/api_trig_queries.sql").toURI())));
-		this.api_proc_template = new String(Files.readAllBytes(Paths.get(AbstractDBManager.class.getResource("/"+config.getDbType()+"/api_proc_template.sql").toURI())));
-		this.api_proc_calc_template = new String(Files.readAllBytes(Paths.get(AbstractDBManager.class.getResource("/"+config.getDbType()+"/api_proc_calc_template.sql").toURI())));
-		this.api_trig_dependent_table_template = new String(Files.readAllBytes(Paths.get(AbstractDBManager.class.getResource("/"+config.getDbType()+"/api_trig_dependent_table_template.sql").toURI())));
+		this.api_trig_queries = IOUtils.toString(AbstractDBManager.class.getResourceAsStream("/"+config.getDbType()+"/api_trig_queries.sql"));
+		this.api_proc_template = IOUtils.toString(AbstractDBManager.class.getResourceAsStream("/"+config.getDbType()+"/api_proc_template.sql"));
+		this.api_proc_calc_template = IOUtils.toString(AbstractDBManager.class.getResourceAsStream("/"+config.getDbType()+"/api_proc_calc_template.sql"));
+		this.api_trig_dependent_table_template = IOUtils.toString(AbstractDBManager.class.getResourceAsStream("/"+config.getDbType()+"/api_trig_dependent_table_template.sql"));
 		
 		getConnection();
 	}
