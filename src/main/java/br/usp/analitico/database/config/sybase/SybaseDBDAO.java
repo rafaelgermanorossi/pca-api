@@ -68,7 +68,7 @@ public class SybaseDBDAO extends AbstractDBDAO{
 	public void insertQuery(QueryBean query) throws SQLException{
 		connection.setCatalog(config.getMetadataSchema());
 
-		PreparedStatement ps = connection.prepareStatement("insert into queries (queryId, qText, identityColumn, identityColumnType, currentIdentityMaxValue, viewName, incremental, updateMethod, currentRowCount) values (?,?,?,?,?,?,?,?,?)");
+		PreparedStatement ps = connection.prepareStatement("insert into queries (queryId, queryText, identityColumn, identityColumnType, currentIdentityMaxValue, viewName, incremental, updateMethod, currentRowCount) values (?,?,?,?,?,?,?,?,?)");
 		ps.setString(1, query.getQueryId());
 		ps.setString(2, query.getQueryText());
 		ps.setString(3, query.getIdentityColumn());
