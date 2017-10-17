@@ -37,7 +37,7 @@ public class QueryBean implements IExportable{
 		return queryText;
 	}
 
-	public void setqText(String queryText) {
+	public void setQueryText(String queryText) {
 		this.queryText = queryText;
 	}
 
